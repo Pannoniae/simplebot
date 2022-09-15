@@ -12,4 +12,4 @@ client.on('guildMemberAdd', async member => {
     }
 })
 
-await client.login("TOKEN");
+client.login("TOKEN");
