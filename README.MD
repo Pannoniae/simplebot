@@ -1,0 +1,1 @@
+This is a simple bot for banning invite bots. It bans people with suspicious names.
