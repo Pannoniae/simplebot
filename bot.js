@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('guildMemberAdd', async member => {
-    if ("[\\w\\s]+? [\\w\\s]+?. [\\w\\s]+?".match(member.displayName)) {
+    if ("[\\w\\s]+? [\\w\\s]+?. [\\w\\s]+?".test(member.displayName)) {
         await member.ban();
         console.log(`Banned ${member.displayName} for suspicious username.`);
     }
